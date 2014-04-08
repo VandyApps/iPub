@@ -21,7 +21,8 @@
 		5228736218F3A15600FAD07F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5228734118F3A15600FAD07F /* UIKit.framework */; };
 		5228736A18F3A15600FAD07F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5228736818F3A15600FAD07F /* InfoPlist.strings */; };
 		5228736C18F3A15600FAD07F /* iPubTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5228736B18F3A15600FAD07F /* iPubTests.m */; };
-		5228737718F3A18500FAD07F /* IPTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5228737618F3A18500FAD07F /* IPTableViewController.m */; };
+		5242C4FF18F3A2F300262BCF /* IPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 5242C4FE18F3A2F300262BCF /* IPFetcher.m */; };
+		5242C50218F3A7E400262BCF /* IPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5242C50118F3A7E400262BCF /* IPViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +54,10 @@
 		5228736718F3A15600FAD07F /* iPubTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iPubTests-Info.plist"; sourceTree = "<group>"; };
 		5228736918F3A15600FAD07F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5228736B18F3A15600FAD07F /* iPubTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iPubTests.m; sourceTree = "<group>"; };
-		5228737518F3A18500FAD07F /* IPTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPTableViewController.h; sourceTree = "<group>"; };
-		5228737618F3A18500FAD07F /* IPTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPTableViewController.m; sourceTree = "<group>"; };
+		5242C4FD18F3A2F300262BCF /* IPFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPFetcher.h; sourceTree = "<group>"; };
+		5242C4FE18F3A2F300262BCF /* IPFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPFetcher.m; sourceTree = "<group>"; };
+		5242C50018F3A7E400262BCF /* IPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPViewController.h; sourceTree = "<group>"; };
+		5242C50118F3A7E400262BCF /* IPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +121,10 @@
 				5228734D18F3A15600FAD07F /* IPAppDelegate.m */,
 				5228734F18F3A15600FAD07F /* Main_iPhone.storyboard */,
 				5228735218F3A15600FAD07F /* Main_iPad.storyboard */,
-				5228737518F3A18500FAD07F /* IPTableViewController.h */,
-				5228737618F3A18500FAD07F /* IPTableViewController.m */,
+				5242C50018F3A7E400262BCF /* IPViewController.h */,
+				5242C50118F3A7E400262BCF /* IPViewController.m */,
+				5242C4FD18F3A2F300262BCF /* IPFetcher.h */,
+				5242C4FE18F3A2F300262BCF /* IPFetcher.m */,
 				5228735818F3A15600FAD07F /* Images.xcassets */,
 				5228734418F3A15600FAD07F /* Supporting Files */,
 			);
@@ -254,9 +259,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5242C4FF18F3A2F300262BCF /* IPFetcher.m in Sources */,
 				5228734A18F3A15600FAD07F /* main.m in Sources */,
 				5228734E18F3A15600FAD07F /* IPAppDelegate.m in Sources */,
-				5228737718F3A18500FAD07F /* IPTableViewController.m in Sources */,
+				5242C50218F3A7E400262BCF /* IPViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +477,7 @@
 				5228737118F3A15600FAD07F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5228737218F3A15600FAD07F /* Build configuration list for PBXNativeTarget "iPubTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +486,7 @@
 				5228737418F3A15600FAD07F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
