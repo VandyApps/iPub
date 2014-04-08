@@ -79,7 +79,9 @@
                     len = [self.inputStream read:buffer maxLength:sizeof(buffer)];
                     if (len > 0) {
                         
-                        NSString *output = [[NSString alloc] initWithBytes:buffer length:len encoding:NSASCIIStringEncoding];
+                        NSString *output = [[NSString alloc] initWithBytes:buffer
+                                                                    length:len
+                                                                  encoding:NSASCIIStringEncoding];
                         NSLog(@"Output: %@", output);
                         self.lastFetchedEntries = output;
                         [self.delegate didFetchEntries:[output componentsSeparatedByString:@","]];
