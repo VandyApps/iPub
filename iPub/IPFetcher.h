@@ -21,7 +21,8 @@
 
 @property (strong, nonatomic) NSString *fetchAddress;
 @property (strong, nonatomic) NSString *lastFetchedEntries;
+
 @property (assign, nonatomic) NSInteger port;
-@property (strong, nonatomic) id<IPFetcherDelegate> delegate;
+@property (assign, nonatomic) id<IPFetcherDelegate> delegate;
 
 @end
